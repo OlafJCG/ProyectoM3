@@ -57,7 +57,22 @@ for j in range(3000):
                 break
   ```
   
-  <p>
-    El siguiente paso del programa es crear un diccionario con la lista que contiene los resultados de las 3,000 canicas y enviarlo a una fun
+
+######    El siguiente paso del programa es crear un diccionario con la lista que contiene los resultados de las 3,000 canicas y enviarle ese diccionario a una función que nos grafique esos resultados utilizando el módulo `<pyplot>` de la biblioteca `<matplotlb>` y finalmente las funciónes `<bar>` para crear la gráfica, `<title>` para introducir un titulo a la gráfica, `<xlabel>` y `<ylabel>` para asignar un nombre a los ejes "x" y "y". Finalmente la función `<show>` para que nos muestre la gráfica.
   
-  </p>
+  
+```
+  def histograma (ubicaciones):
+    """
+    FUNCIÓN QUE CREA UN HISTOGRAMA SIMULANDO UNA MÁQUINA DE GALTON.
+    """
+    plt.bar(ubicaciones.keys(), ubicaciones.values(), color = "red")
+    plt.title("MÁQUINA DE GALTON")
+    plt.xlabel("Ubicación")
+    plt.ylabel("Cantidad de canicas.")
+    plt.show()
+```   
+________________________  
+<p align="center">
+    REFLEXIÓN DEL BOOTCAMP
+</p>
