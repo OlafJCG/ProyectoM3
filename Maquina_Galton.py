@@ -1,5 +1,5 @@
 """
-SIMULACIÓN DE UNA MÁQUINA DE GALTON DE 3,000 CANICAS.
+SIMULACIÓN DE UNA MÁQUINA DE GALTON CON 3,000 CANICAS.
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,27 +17,28 @@ def histograma (ubicaciones):
 
 def valores ():
     """
-    FUNCIÓN QUE SIMULA UNA MÁQUINA DE GALTON, PASANDO POR 12 PASOS EN LOS QUE TIENE QUE TOMAR UNO DE DOS CAMINOS.
-    SIMULA QUE 3,000 CANICAS VAN A LLEGAR A UN CASILLERO EN EL QUE SE VAN A IR ACUMULANDO CONFORME CAEN A UN CASILLERO.
+    FUNCIÓN QUE CREA UNA LISTA SIMULANDO CASILLEROS INCIALIZADOS EN 0
+    HACE UN CICLO DE 3,000 POSIBILIDADES QUE HARÁN UN CAMINO DE 12 PASOS
+    EN CADA PASO TENDRÁN SE SUMARÁ O RESTARÁ ALEATORIAMENTE UN VALOR
+    TERMINADOS LOS DOCE PASOS, SE SUMARÁ UNA UNIDAD AL ÍNDICE DE 
+    LA LISTA QUE SEA IGUAL AL RESULTADO DE LOS DOCE PASOS.
     """
     casillero = []
-    for i in range(12):
+    for k in range(13):
         casillero.append(0)
     for j in range(3000):
-        u= 6.5
-        for i in range(13):
-            test = np.random.randint(2)
+        u= 6
+        for l in range(12):
+            test = np.random.randint(1,3)
             if test == 1:
                 u += 0.5
-            else:
+            elif test == 2:
                 u -= 0.5
-        for i in range(len(casillero)):
+        for i in range(13):
             if u == i:
                 casillero[i] += 1
-    llave = []
-    for i in range(1,13):
-        llave.append(i)
-    diccionario = dict(zip(llave,casillero))
+                break
+    diccionario = dict((x,casillero[x]) for x in range(13))
     histograma(diccionario)
     
 valores()
