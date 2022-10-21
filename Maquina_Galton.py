@@ -1,6 +1,7 @@
 """
 SIMULACIÓN DE UNA MÁQUINA DE GALTON CON 3,000 CANICAS.
 """
+# 
 import matplotlib.pyplot as plt
 import numpy as np
 
