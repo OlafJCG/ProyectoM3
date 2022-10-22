@@ -37,6 +37,18 @@ for k in range(13):
 for j in range(3000):
   u= 6
 ```  
+
+###### Ciclo `<for>` de los 12 pasos aleatorios.
+
+```
+for l in range(12):
+  test = np.random.randint(1,3)
+  if test == 1:
+    u += 0.5
+  elif test == 2:
+    u -= 0.5
+```
+
 <p>
   Cada vez que ínicia un nuevo proceso (la canica) se inicia con 6 (simulando que se deja caer la canica desde la posición media de todos los casilleros).
   </p>
