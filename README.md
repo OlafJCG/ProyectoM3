@@ -76,3 +76,7 @@ ________________________
 <p align="center">
     REFLEXIÓN DEL BOOTCAMP
 </p>
+
+<p>
+  Ha sido muy gratificante todo lo aprendido y cómo evolucionó el curso a lo largo de las semanas y muy agradecido por la atención que nos ha brindado nuestro couch. Todo excelente hasta ahora.
+</p>
