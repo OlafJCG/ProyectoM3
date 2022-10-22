@@ -1,6 +1,7 @@
 """
 SIMULACIÓN DE UNA MÁQUINA DE GALTON CON 3,000 CANICAS.
 """
+
 # Importamos las bibliotecas "matplotlib" con su módulo "pyplot" y "numpy". Posteriormente les asignamos un alias
 import matplotlib.pyplot as plt
 import numpy as np
